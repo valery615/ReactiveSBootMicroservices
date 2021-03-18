@@ -1,22 +1,23 @@
 package com.softeq.reactive.entity;
 
 
-import java.util.Objects;
+import org.springframework.data.annotation.Id;
 
 public class Message {
-    int id;
-    String text;
+    @Id
+    private Integer id;
+    private String text;
 
-    public Message(int id, String text) {
+    public Message(Integer id, String text) {
         this.id = id;
         this.text = text;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

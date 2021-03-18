@@ -1,0 +1,4 @@
+CREATE TABLE message(
+id INT NOT NULL PRIMARY KEY UNIQUE,
+text char(255)
+);
