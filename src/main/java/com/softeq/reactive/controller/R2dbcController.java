@@ -12,11 +12,11 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/db")
-public class Controller {
+public class R2dbcController {
     private final MessageService messageService;
 
     @Autowired
-    public Controller(MessageService messageService) {
+    public R2dbcController(MessageService messageService) {
         this.messageService = messageService;
     }
 

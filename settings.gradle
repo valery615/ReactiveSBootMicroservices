@@ -12,3 +12,5 @@ pluginManagement {
     }
 }
 rootProject.name = 'reactive'
+include 'reactive-mongo'
+
