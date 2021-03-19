@@ -1,6 +1,6 @@
 package com.softeq.reactive.controller;
 
-import com.softeq.reactive.entity.User;
+import com.softeq.reactive.entity.Users;
 import com.softeq.reactive.service.UserMongoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +20,7 @@ public class MongoController {
     }
 
     @GetMapping
-    public Flux<User> findAll(){
+    public Flux<Users> findAll(){
         return service.findAll();
     }
 
