@@ -22,7 +22,7 @@ public class R2dbcController {
 
     @GetMapping("/{id}")
     public Mono<Message> getMessageById(@PathVariable Integer id) {
-        return messageService.getById(id);
+        return messageService.findById(id);
     }
 
     @GetMapping
